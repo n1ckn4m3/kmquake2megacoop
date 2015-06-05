@@ -361,8 +361,8 @@ void SV_InitGame (void)
 	}
 	else if (Cvar_VariableValue ("coop"))
 	{
-		if (maxclients->value <= 1 || maxclients->value > 4)
-			Cvar_FullSet ("maxclients", "4", CVAR_SERVERINFO | CVAR_LATCH);
+		if (maxclients->value <= 1 || maxclients->value > 16)
+			Cvar_FullSet ("maxclients", "16", CVAR_SERVERINFO | CVAR_LATCH);
 	}
 	else	// non-deathmatch, non-coop is one player
 	{
